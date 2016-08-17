@@ -17,8 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jason is a fag" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-A3-Bux">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nJ-35-rOr">
+                                <rect key="frame" x="200" y="358" width="200" height="21"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jason loves dick" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIK-u2-WQ7">
                                 <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sz9-fD-NMG"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost of one night with Jason" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y0u-tI-EQL">
+                                <rect key="frame" x="200" y="165" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mr4-LF-M33"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-vZ-tsb">
+                                <rect key="frame" x="200" y="424" width="200" height="20.5"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.1960784314" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jason is a fag" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-A3-Bux">
+                                <rect key="frame" x="200" y="229" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="LBf-nB-2xg"/>
                                 </constraints>
@@ -31,12 +61,28 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="uuA-A3-Bux" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iuz-Ym-QZZ"/>
+                            <constraint firstItem="yIK-u2-WQ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rgm-WN-b6L"/>
+                            <constraint firstItem="yIK-u2-WQ7" firstAttribute="top" secondItem="uuA-A3-Bux" secondAttribute="bottom" constant="26" id="Zef-8M-G0d"/>
+                            <constraint firstItem="Y0u-tI-EQL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d8U-HW-MRI"/>
+                            <constraint firstItem="LJS-vZ-tsb" firstAttribute="width" secondItem="yIK-u2-WQ7" secondAttribute="width" id="dB0-2U-8ez"/>
+                            <constraint firstItem="LJS-vZ-tsb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="etG-fG-Guj"/>
+                            <constraint firstItem="yIK-u2-WQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j8j-5S-cpg"/>
+                            <constraint firstItem="7nJ-35-rOr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jjY-h5-JuR"/>
+                            <constraint firstItem="Y0u-tI-EQL" firstAttribute="width" secondItem="yIK-u2-WQ7" secondAttribute="width" id="kb3-79-2sK"/>
+                            <constraint firstItem="uuA-A3-Bux" firstAttribute="top" secondItem="Y0u-tI-EQL" secondAttribute="bottom" constant="34" id="mfM-TR-MdI"/>
+                            <constraint firstItem="yIK-u2-WQ7" firstAttribute="width" secondItem="uuA-A3-Bux" secondAttribute="width" id="xXe-YP-Tef"/>
                             <constraint firstItem="uuA-A3-Bux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xsd-mk-dBX"/>
+                            <constraint firstItem="7nJ-35-rOr" firstAttribute="width" secondItem="uuA-A3-Bux" secondAttribute="width" id="xyz-Hg-PtT"/>
+                            <constraint firstItem="7nJ-35-rOr" firstAttribute="top" secondItem="yIK-u2-WQ7" secondAttribute="bottom" constant="43" id="z3X-o5-1fU"/>
+                            <constraint firstItem="LJS-vZ-tsb" firstAttribute="top" secondItem="7nJ-35-rOr" secondAttribute="bottom" constant="45" id="zXK-MT-n1s"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="jasonTextField" destination="uuA-A3-Bux" id="oYX-Ut-ddt"/>
+                        <outlet property="costOfFoodTextField" destination="Y0u-tI-EQL" id="Uqq-8Q-FDd"/>
+                        <outlet property="fuckinTotal" destination="LJS-vZ-tsb" id="d2v-AV-Lqy"/>
+                        <outlet property="jasonAmountTextField" destination="uuA-A3-Bux" id="Gko-an-U8k"/>
+                        <outlet property="jasonPercentTextField" destination="yIK-u2-WQ7" id="Dge-4F-ziD"/>
+                        <outlet property="totalLabel" destination="7nJ-35-rOr" id="Sdf-FY-8el"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
